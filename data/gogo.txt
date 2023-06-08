@@ -1,0 +1,44 @@
+Q: show help for all commands
+A: felix:lb
+
+Q: show help for 'echo' command
+A: felix:help echo
+
+Q: list contents of a directory
+A: felix:ls 'directory'
+
+Q: change directory
+A: felix:cd 'directory'
+
+Q: determine from where a bundle loads a class
+A: felix:which 'class'
+
+Q: install a bundle using its locations
+A: felix:install 'file:/path_to_jar.jar'
+
+Q: uninstall bundle with id 10
+A: felix:uninstall 10
+
+Q: refresh bundle with id 10
+A: felix:refresh 10
+
+Q: resolve bundle with id 15
+A: felix:resolve 15
+
+Q: start bundle with id 20
+A: felix:start 20
+
+Q: stop bundle with id 25
+A: felix:stop 25
+
+Q: show bundle start level of bundle with id 30
+A: felix:bundlelevel 30
+
+Q: set bundle start level to 11 of bundle with id 30
+A: felix:bundlelevel 11 30
+
+Q: show start level of framework bundle
+A: felix:frameworklevel
+
+Q: change framework start level to 20
+A: felix:frameworklevel 20
