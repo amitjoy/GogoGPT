@@ -42,3 +42,51 @@ A: felix:frameworklevel
 
 Q: change framework start level to 20
 A: felix:frameworklevel 20
+
+Q: list bundles matching a substring
+A: felix:lb substring
+
+Q: list bundle matching a substring and show locations
+A: felix:lb -l substring
+
+Q: list bundles matching a substring and show symbolic names
+A: felix:lb -s substring
+
+Q: list bundles matching a substring and show update location
+A: felix:lb -u substring
+
+Q: show all capabilities of all bundles
+A: felix:inspect cap *
+
+Q: show all capabilities of a bundle having id 1
+A: felix:inspect cap * 1
+
+Q: show all packages capabilities of a bundle having id 1
+A: felix:inspect cap package 1
+
+Q: show all package capabilities of all bundles
+A: felix:inspect cap package
+
+Q: show all service capabilities of a bundle having id 1
+A: felix:inspect cap service 1
+
+Q: show all service capabilities of all bundles
+A: felix:inspect cap service
+
+Q: show all requirements of all bundles
+A: felix:inspect req *
+
+Q: show all requirements of a bundle having id 1
+A: felix:inspect req * 1
+
+Q: show all package requirements of a bundle having id 1
+A: felix:inspect req *package* 1
+
+Q: show all package requirements of all bundles
+A: felix:inspect req package
+
+Q: show all service requirements of a bundle having id 1
+A: felix:inspect cap service 1
+
+Q: show all service requirements of all bundles
+A: felix:inspect cap service
