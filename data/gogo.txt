@@ -90,3 +90,27 @@ A: felix:inspect cap service 1
 
 Q: show all service requirements of all bundles
 A: felix:inspect cap service
+
+Q: show session context
+A: gogo:set
+
+Q: set a variable into session context
+A: variable = value
+
+Q: get value of the variable set in the session context
+A: $variable
+
+Q: print the variable set in the session context
+A: echo $variable
+
+Q: Match input using regular expression (grep)
+A: echo test | grep '[tT]est'
+
+Q: Read the content of a resource from path, for example, a/b/c.txt
+A: cat a/b/c.txt
+
+Q: Collect contents of a/b/c.txt into onle line
+A: cat a/b/c.txt | tac
+
+Q: Collect contents of a/b/c.txt into a variable, named 'my_var'
+A: my_var = (cat a/b/c.txt | tac)
