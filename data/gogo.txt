@@ -114,3 +114,33 @@ A: cat a/b/c.txt | tac
 
 P: Collect contents of a/b/c.txt into a variable, named 'my_var'
 A: my_var = (cat a/b/c.txt | tac)
+
+P: Print Hello World
+A: echo Hello World
+
+P: Show history
+A: history
+
+P: Execute the 1st command from the history
+A: !1
+
+P: Execute the command from the history that starts with x
+A: !x
+
+P: Show the current time in milliseconds (millis)
+A: currenttimemillis
+
+P: Show the system property named my_property 
+A: property my_property
+
+P: Show the user directory system property
+A: property user.dir
+
+P: Show the java home system property
+A: property java.home
+
+P: Show the java versiob system property
+A: property java.version
+
+P: Show the operating system (os) name system property
+A: property os.name
