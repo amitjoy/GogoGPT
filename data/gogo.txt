@@ -144,3 +144,69 @@ A: property java.version
 
 P: Show the operating system (os) name system property
 A: property os.name
+
+P: Show the nano time
+A: nanotime
+
+P: Generate identity hashcode of string abc
+A: identityhashcode abc
+
+P: List all environment variables
+A: env
+
+P: Show or get the environment variable JAVA_HOME
+A: env JAVA_HOME
+
+P: Perform garbage collection
+A: gc
+
+P: List all the components
+A: scr:list
+
+P: Show the components that contain the string abc
+A: scr:list | grep -A 1 abc
+
+P: Show the info of the component having id 10
+A: scr:info 10
+
+P: Show the component info having name abc
+A: scr:info abc
+
+P: Enable the component with name abc
+A: scr:enable abc
+
+P: Disable the component with name abc
+A: scr:disable abc
+
+P: Show the SCR configuration
+A: scr:config
+
+P: Show the headers of bundle with id 4
+A: bundle = bundle 4 | $bundle headers
+
+P: Show the bundle name of bundle with id 4
+A: bundle = bundle 4 | $bundle tostring
+
+P: Show the bundle context of bundle with id 4
+A: bundle = bundle 4 | $bundle bundlecontext
+
+P: Show the symbolic name of bundle with id 10
+A: bundle = bundle 10 | $bundle symbolicname
+
+P: Show the location of bundle with id 12
+A: bundle = bundle 12 | $bundle location
+
+P: Show the registered services of bundle id 15
+A: bundle = bundle 15 | $bundle registeredservices
+
+P: Show the used services of bundle id 15
+A: bundle = bundle 15 | $bundle servicesinuse
+
+P: Show the version of bundle id 16
+A: bundle = bundle 16 | $bundle version
+
+P: Show the revisions of bundle id 17
+A: bundle = bundle 16 | $bundle revisions
+
+P: Load a class - a.b.c by the bundle id 4
+A: bundle = bundle 4 | $bundle loadclass a.b.c
