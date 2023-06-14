@@ -210,3 +210,102 @@ A: bundle = bundle 16 | $bundle revisions
 
 P: Load a class - a.b.c by the bundle id 4
 A: bundle = bundle 4 | $bundle loadclass a.b.c
+
+P: List all configurations (ConfigAdmin configurations)
+A: cm:listconfigurations "(service.pid=*)"
+
+P: List the configurations that have PID set to abc
+A: cm:listconfigurations "(service.pid=abc)"
+
+P: List the configurations whose PID contains xyz
+A: cm:listconfigurations "(service.pid=*xyz*)"
+
+P: List the configurations whose PID begins with mno
+A: cm:listconfigurations "(service.pid=mno*)"
+
+P: List the configurations whose PID ends with uvw
+A: cm:listconfigurations "(service.pid=*uvw)"
+
+P: List all configurations (ConfigAdmin configurations)
+A: cm:listconfigurations null
+
+P: List the configurations whose factory PID is wxy
+A: cm:listconfigurations "(service.factoryPid=wxy)"
+
+P: List the configurations whose factory PID contains jkl
+A: cm:listconfigurations "(service.factoryPid=*jkl*)"
+
+P: List the configurations whose factory PID begins with cde
+A: cm:listconfigurations "(service.factoryPid=cde*)"
+
+P: List the configurations whose location ends with aaa
+A: cm:listconfigurations "(service.bundleLocation=*aaa)"
+
+P: List the configurations whose location is bbb
+A: cm:listconfigurations "(service.bundleLocation=bbb)"
+
+P: List the configurations whose location contains ccc
+A: cm:listconfigurations "(service.bundleLocation=*ccc*)"
+
+P: List the configurations whose location begins with ddd
+A: cm:listconfigurations "(service.bundleLocation=ddd*)"
+
+P: List the configurations whose flocation ends with zzz
+A: cm:listconfigurations "(service.bundleLocation=*zzz)"
+
+P: Get the first configuration from the list of configuration whose factory PID is wxy and assign it to variable c
+A: c = (cm:listconfigurations "(service.factoryPid=wxy)") 0
+
+P: Get the third element from the list of configurations whose PID contains xyz and assign it to variable c
+A: c = (cm:listconfigurations "(service.pid=*xyz*)") 2
+
+P: Get the 5th element from the list of configurations whose location is ? and assign it to variable c
+A: c = (cm:listconfigurations "(service.bundleLocation=?)") 4
+
+P: Show the properties of the fifth configuration whose PID contains tuv and assign it to variable c
+A: c = ((cm:listconfigurations "(service.pid=*tuv*)") 4) properties
+
+P: Show the bundle location of the first configuration whose PID contains mno and assign it to variable l
+A: l = (((cm:listconfigurations "(service.pid=*mno*)") 0) properties) BundleLocation
+
+P: Show the change count of the third configuration whose PID contains xyz and assign it to variable l
+A: l = (((cm:listconfigurations "(service.pid=*mno*)") 2) properties) ChangeCount
+
+P: Show the PID of the 6th configuration whose PID stats with xyz and assign it to variable l
+A: l = (((cm:listconfigurations "(service.pid=xyz*)") 5) properties) Pid
+
+P: Show the factory PID of the 4th configuration whose PID ends with xyz and assign it to variable l
+A: l = (((cm:listconfigurations "(service.pid=*xyz)") 3) properties) FactoryPid
+
+P: Get the configuration with PID foo
+A: cm:getconfiguration "foo"
+
+P: Show the bundle location of the confiiguration PID bar and config is visible to all
+A: (cm:getconfiguration "foo" "?") BundleLocation
+
+P: Show the change count of the configuration PID foo.bar and config is visible to all
+A: (cm:getconfiguration "foo.bar" "?") ChangeCount
+
+P: Show the factory PID of the configuration PID foo.bar and config is visible to all
+A: (cm:getconfiguration "foo.bar" "?") FactoryPid
+
+P: Show the properties of the config PID foo.bar and config is visible to all
+A: (cm:getconfiguration "foo.bar" "?") Properties
+
+P: Create a dictionary and assign it to variable d
+A: d = (((bundle 0) loadclass java.util.Hashtable) newInstance)
+
+P: Add foo key to the dictionary d and associate bar value to the key
+A: $d put "foo" "bar"
+
+P: Create a configuration abc.xyz and assign it to variable c
+A: c = cm:getconfiguration "abc.xyz"
+
+P: Update the configuration c with the dictionary d
+A: $c update $d
+
+P: Create a factory PID abc.xyz and assign it to variable f
+A: f = cm:createfactoryconfiguration "foo.biz" "?"
+
+P: Create a factory configuration under factory PID abc and PID xyz and assign it to variable f
+A: f = cm:getfactoryconfiguration "abc" "xyz" "?"
