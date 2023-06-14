@@ -309,3 +309,9 @@ A: f = cm:createfactoryconfiguration "foo.biz" "?"
 
 P: Create a factory configuration under factory PID abc and PID xyz and assign it to variable f
 A: f = cm:getfactoryconfiguration "abc" "xyz" "?"
+
+P: Change prompt to $ sign
+A: prompt = "$ "
+
+P: Change prompt to & sign
+A: prompt = "& "
