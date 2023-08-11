@@ -145,6 +145,9 @@ A: property java.version
 P: Show the operating system (os) name system property
 A: property os.name
 
+P: Set the property A.B to value my_value
+A: property A.B my_value
+
 P: Show the nano time
 A: nanotime
 
