@@ -318,3 +318,9 @@ A: prompt = "$ "
 
 P: Change prompt to & sign
 A: prompt = "& "
+
+P: Lists information about why the specified bundle with ID 100 is not working (e.g., unresolved dependencies, etc.)
+A: diag 100
+
+P: Lists all of the services that have been registered
+A: services
