@@ -79,8 +79,11 @@ A: felix:inspect req *
 P: show all requirements of a bundle having id 1
 A: felix:inspect req * 1
 
+P: show all requirements of bundles having id 10, 45, 33
+A: felix:inspect req * 10 45 33
+
 P: show all package requirements of a bundle having id 1
-A: felix:inspect req *package* 1
+A: felix:inspect req package 1
 
 P: show all package requirements of all bundles
 A: felix:inspect req package
@@ -90,6 +93,9 @@ A: felix:inspect cap service 1
 
 P: show all service requirements of all bundles
 A: felix:inspect cap service
+
+P: show all services exported by bundles with IDs 10, 11, 34
+A: felix:inspect cap service 10 11 34
 
 P: show session context
 A: gogo:set
