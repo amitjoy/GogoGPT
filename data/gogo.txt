@@ -130,6 +130,9 @@ A: history
 P: Execute the 1st command from the history
 A: !1
 
+P: Execute the 5th command from the history
+A: !5
+
 P: Execute the command from the history that starts with x
 A: !x
 
@@ -174,6 +177,9 @@ A: scr:list
 
 P: Show the components that contain the string abc
 A: scr:list | grep -A 1 abc
+
+P: Show the components that contain the string ttsstt in their names
+A: scr:list | grep -A 1 ttsstt
 
 P: Show the info of the component having id 10
 A: scr:info 10
