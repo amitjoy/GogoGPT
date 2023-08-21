@@ -25,11 +25,20 @@ A: felix:refresh 10
 P: resolve bundle with id 15
 A: felix:resolve 15
 
+P: resolve bundles with ids 19 40 32
+A: felix:resolve 19 40 32
+
 P: start bundle with id 20
 A: felix:start 20
 
+P: start bundles with ids 20 30 59 53
+A: felix:start 20 30 59 53
+
 P: stop bundle with id 25
 A: felix:stop 25
+
+P: stop bundles with ids 25 50 39 22
+A: felix:stop 25 50 39 22
 
 P: show bundle start level of bundle with id 30
 A: felix:bundlelevel 30
