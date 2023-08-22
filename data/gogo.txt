@@ -49,6 +49,15 @@ A: felix:resolve 19 40 32
 P: start bundle with id 20
 A: felix:start 20
 
+P: start bundle id 29
+A: felix:start 29
+
+P: start bundle id 58 transiently
+A: felix:start 58 -t
+
+P: start bundle ids 10 20 30 99 transiently
+A: felix:start 10 20 30 99 -t
+
 P: start bundles with ids 20 30 59 53
 A: felix:start 20 30 59 53
 
