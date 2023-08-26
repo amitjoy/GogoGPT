@@ -7,6 +7,12 @@ A: felix:lb xyz
 P: show all bundles that have abc in their bsn
 A: felix:lb abc
 
+P: show all bundles that have mno in their bsn and list them by bundle symbolic names
+A: felix:lb mno -s
+
+P: show all bundles that have wxy in their bundle symbolic names and list them by bsn
+A: felix:lb wxy -s
+
 P: show help for 'echo' command
 A: felix:help echo
 
