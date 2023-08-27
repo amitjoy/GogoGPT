@@ -64,8 +64,20 @@ A: felix:start 20 30 59 53
 P: stop bundle with id 25
 A: felix:stop 25
 
+P: stop bundle id 55
+A: felix:stop 55
+
+P: stop bundle id 91 tranisently
+A: felix:stop 91 -t
+
 P: stop bundles with ids 25 50 39 22
 A: felix:stop 25 50 39 22
+
+P: stop bundles ids 25 50 39 22
+A: felix:stop 25 50 39 22
+
+P: stop bundles ids 25 50 39 22 tranisently
+A: felix:stop 25 50 39 22 -t
 
 P: show bundle start level of bundle with id 30
 A: felix:bundlelevel 30
