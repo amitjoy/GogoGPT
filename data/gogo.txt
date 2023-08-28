@@ -22,6 +22,12 @@ A: felix:ls 'directory'
 P: change directory
 A: felix:cd 'directory'
 
+P: change directory to efg
+A: felix:cd efg
+
+P: change directory to 'my directory'
+A: felix:cd 'my directory'
+
 P: determine from where a bundle loads a class
 A: felix:which 'class'
 
