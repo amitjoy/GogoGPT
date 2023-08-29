@@ -223,6 +223,12 @@ A: gc
 P: List all the components
 A: scr:list
 
+P: List all the components of bundle with id 57
+A: scr:list 57
+
+P: List all the components of bundle id 91
+A: scr:list 91
+
 P: Show the components that contain the string abc
 A: scr:list | grep -A 1 abc
 
