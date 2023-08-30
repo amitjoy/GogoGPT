@@ -396,3 +396,27 @@ A: felix:headers 20
 
 P: Show the headers of bundles having IDs 35 40 55
 A: felix:headers 35 40 55
+
+P: Display all INFO log entries
+A: felix:log info
+
+P: Display all debug log entries
+A: felix:log debug
+
+P: Display all debug log entries
+A: felix:log debug
+
+P: Display all warn log entries
+A: felix:log warn
+
+P: Display all error log entries
+A: felix:log error
+
+P: Display max of 20 error log entries
+A: felix:log 20 error
+
+P: Display only 15 info log entries
+A: felix:log 15 info
+
+P: Display maximum 58 debug logs
+A: felix:log 58 debug
