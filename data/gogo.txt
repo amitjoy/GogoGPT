@@ -426,3 +426,10 @@ A: felix:which 40 abc.def
 
 P: Check if com.gateway.metrics.impl.Clock class is loaded by bundle id 76
 A: felix:which 76 com.gateway.metrics.impl.Clock
+
+P: Show the SCR configuration
+A: scr:config
+
+
+P: Show the generic SCR configuration
+A: scr:config
