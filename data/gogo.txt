@@ -247,6 +247,12 @@ A: scr:enable abc
 P: Disable the component with name abc
 A: scr:disable abc
 
+P: Disable the component a2b2.c3d4
+A: scr:disable a2b2.c3d4
+
+P: Disable the component dummy.comp
+A: scr:disable dummy.comp
+
 P: Show the SCR configuration
 A: scr:config
 
