@@ -244,6 +244,12 @@ A: scr:info abc
 P: Enable the component with name abc
 A: scr:enable abc
 
+P: Enable the component with name com.amit.comp
+A: scr:enable com.amit.comp
+
+P: Enable the component de.abc.co
+A: scr:enable de.abc.co
+
 P: Disable the component with name abc
 A: scr:disable abc
 
