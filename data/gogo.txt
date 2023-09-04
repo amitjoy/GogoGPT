@@ -13,6 +13,12 @@ A: felix:lb mno -s
 P: show all bundles that have wxy in their bundle symbolic names and list them by bsn
 A: felix:lb wxy -s
 
+P: show all bundles that have anx in their bsn and list them by their update locations
+A: felix:lb anx -u
+
+P: show all bundles that have wuvx in their bundle symbolic names and list by update locations
+A: felix:lb wuvx -u
+
 P: show help for 'echo' command
 A: felix:help echo
 
