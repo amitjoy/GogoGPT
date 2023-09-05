@@ -448,6 +448,11 @@ A: felix:which 76 com.gateway.metrics.impl.Clock
 P: Show the SCR configuration
 A: scr:config
 
-
 P: Show the generic SCR configuration
 A: scr:config
+
+P: Add a command named my-command that accepts an array containing 4, 6, 8, 10
+A: addcommand my-command [4 6 8 10]
+
+P: Add a command named math containing all functions available in Math class
+A: addcommand math ((bundle 0) loadclass java.lang.Math) 
