@@ -43,6 +43,12 @@ A: felix:install 'file:/path_to_jar.jar'
 P: uninstall bundle with id 10
 A: felix:uninstall 10
 
+P: uninstall bundles 13 38 62 77
+A: felix:uninstall 13 38 62 77
+
+P: uninstall bundles with ids 22, 34, 58, 84
+A: felix:uninstall 22 34 58 84
+
 P: refresh bundle with id 10
 A: felix:refresh 10
 
