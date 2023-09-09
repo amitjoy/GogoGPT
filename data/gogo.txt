@@ -22,6 +22,12 @@ A: felix:lb wuvx -u
 P: show help for 'echo' command
 A: felix:help echo
 
+P: show help information for 'ls' command
+A: felix:help ls
+
+P: get help for 'lb' command
+A: felix:help lb
+
 P: list contents of a directory
 A: felix:ls 'directory'
 
