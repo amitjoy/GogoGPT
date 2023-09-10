@@ -31,6 +31,12 @@ A: felix:help lb
 P: list contents of a directory
 A: felix:ls 'directory'
 
+P: list 'xyz' directory
+A: felix:ls 'xyz'
+
+P: list content of 'ppx' directory
+A: felix:ls 'ppx'
+
 P: change directory
 A: felix:cd 'directory'
 
