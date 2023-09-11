@@ -118,6 +118,12 @@ A: felix:frameworklevel 20
 P: list bundles matching a substring
 A: felix:lb substring
 
+P: list bundles that match mno
+A: felix:lb mno
+
+P: list bundles that contain xyz
+A: felix:lb xyz
+
 P: list bundle matching a substring and show locations
 A: felix:lb -l substring
 
