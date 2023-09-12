@@ -130,6 +130,12 @@ A: felix:lb -l substring
 P: list bundles matching a substring and show symbolic names
 A: felix:lb -s substring
 
+P: list bundles that contain xyz and show symbolic names
+A: felix:lb -s xyz
+
+P: list bundles that have abc and show their symbolic names
+A: felix:lb -s abc
+
 P: list bundles matching a substring and show update location
 A: felix:lb -u substring
 
