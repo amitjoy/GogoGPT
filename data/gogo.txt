@@ -232,7 +232,7 @@ A: property user.dir
 P: Show the java home system property
 A: property java.home
 
-P: Show the java versiob system property
+P: Show the java version system property
 A: property java.version
 
 P: Show the operating system (os) name system property
