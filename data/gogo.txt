@@ -241,6 +241,15 @@ A: property os.name
 P: Set the property A.B to value my_value
 A: property A.B my_value
 
+P: Set property prop to value val
+A: property prop val
+
+P: Change property xyz to mmm
+A: property xyz mmm
+
+P: Update property abc to def
+A: property abc def
+
 P: Show the nano time
 A: nanotime
 
