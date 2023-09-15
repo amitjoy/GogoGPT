@@ -253,8 +253,17 @@ A: property abc def
 P: Show the nano time
 A: nanotime
 
+P: Display current time millis
+A: currentTimeMillis
+
+P: Show line separator
+A: lineSeparator
+
 P: Generate identity hashcode of string abc
 A: identityhashcode abc
+
+P: Generate identity hashcode of ammiiittt
+A: identityhashcode ammiiittt
 
 P: List all environment variables
 A: env
@@ -263,6 +272,9 @@ P: Show or get the environment variable JAVA_HOME
 A: env JAVA_HOME
 
 P: Perform garbage collection
+A: gc
+
+P: Perform gc
 A: gc
 
 P: List all the components
