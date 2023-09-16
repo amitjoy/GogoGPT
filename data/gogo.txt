@@ -28,6 +28,9 @@ A: felix:help ls
 P: get help for 'lb' command
 A: felix:help lb
 
+P: Show all system properties
+A: properties
+
 P: list contents of a directory
 A: felix:ls 'directory'
 
