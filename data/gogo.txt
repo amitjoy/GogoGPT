@@ -463,6 +463,9 @@ A: diag 100
 P: Lists all of the services that have been registered
 A: services
 
+P: Lists all registered services
+A: services
+
 P: Show the headers of bundle having ID 20
 A: felix:headers 20
 
