@@ -280,6 +280,9 @@ A: gc
 P: Perform gc
 A: gc
 
+P: Remove the property abc
+A: clearProperty abc
+
 P: List all the components
 A: scr:list
 
