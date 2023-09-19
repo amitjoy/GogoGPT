@@ -499,6 +499,9 @@ A: felix:log 15 info
 P: Display maximum 58 debug logs
 A: felix:log 58 debug
 
+P: Display only 18 warn logs
+A: felix:log 18 warn
+
 P: Check if abc.def class is loaded by bundle id 40
 A: felix:which 40 abc.def
 
