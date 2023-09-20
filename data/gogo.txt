@@ -52,6 +52,9 @@ A: felix:cd 'my directory'
 P: determine from where a bundle loads a class
 A: felix:which 'class'
 
+P: determine from where a bundle loads 'abc' class
+A: felix:which 'abc'
+
 P: install a bundle using its locations
 A: felix:install 'file:/path_to_jar.jar'
 
@@ -67,8 +70,14 @@ A: felix:uninstall 22 34 58 84
 P: refresh bundle with id 10
 A: felix:refresh 10
 
+P: refresh bundle 25
+A: felix:refresh 25
+
 P: resolve bundle with id 15
 A: felix:resolve 15
+
+P: resolve bundle 35
+A: felix:resolve 35
 
 P: resolve bundles with ids 19 40 32
 A: felix:resolve 19 40 32
@@ -87,6 +96,9 @@ A: felix:start 10 20 30 99 -t
 
 P: start bundles with ids 20 30 59 53
 A: felix:start 20 30 59 53
+
+P: stop bundle 65
+A: felix:stop 65
 
 P: stop bundle with id 25
 A: felix:stop 25
