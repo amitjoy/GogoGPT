@@ -109,6 +109,9 @@ A: felix:stop 55
 P: stop bundle id 91 tranisently
 A: felix:stop 91 -t
 
+P: stop bundle id 30 tranisently
+A: felix:stop 30 -t
+
 P: stop bundles with ids 25 50 39 22
 A: felix:stop 25 50 39 22
 
