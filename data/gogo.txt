@@ -229,6 +229,9 @@ A: my_var = (cat a/b/c.txt | tac)
 P: Print Hello World
 A: echo Hello World
 
+P: Echo Hi
+A: echo Hi
+
 P: Show history
 A: history
 
