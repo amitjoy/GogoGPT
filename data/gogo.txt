@@ -145,6 +145,9 @@ A: felix:lb xyz
 P: list bundle matching a substring and show locations
 A: felix:lb -l substring
 
+P: list bundle matching xyz and show locations
+A: felix:lb -l xyz
+
 P: list bundles matching a substring and show symbolic names
 A: felix:lb -s substring
 
@@ -297,6 +300,9 @@ A: gc
 
 P: Remove the property abc
 A: clearProperty abc
+
+P: Clear the property dfg
+A: clearProperty dfg
 
 P: List all the components
 A: scr:list
