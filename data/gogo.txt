@@ -274,6 +274,12 @@ A: property abc def
 P: Show the nano time
 A: nanotime
 
+P: Display nano time
+A: nanotime
+
+P: Show current time in millis
+A: currentTimeMillis
+
 P: Display current time millis
 A: currentTimeMillis
 
