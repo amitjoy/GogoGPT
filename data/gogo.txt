@@ -241,8 +241,14 @@ A: !1
 P: Execute the 5th command from the history
 A: !5
 
+P: Execute the 16th command from the history
+A: !16
+
 P: Execute the command from the history that starts with x
 A: !x
+
+P: Execute the command from the history starting with p
+A: !p
 
 P: Show the current time in milliseconds (millis)
 A: currenttimemillis
