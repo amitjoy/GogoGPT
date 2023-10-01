@@ -508,6 +508,9 @@ A: services
 P: Lists all registered services
 A: services
 
+P: Show the headers of bundle 66
+A: felix:headers 66
+
 P: Show the headers of bundle having ID 20
 A: felix:headers 20
 
