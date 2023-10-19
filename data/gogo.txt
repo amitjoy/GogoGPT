@@ -1,6 +1,9 @@
 P: show all bundles
 A: felix:lb
 
+P: list all bundles
+A: felix:lb
+
 P: show all bundles that have xyz in their symbolic names
 A: felix:lb xyz
 
