@@ -130,6 +130,9 @@ A: felix:stop 25 50 39 22 -t
 P: show bundle start level of bundle with id 30
 A: felix:bundlelevel 30
 
+P: show bundle level of bundle 70
+A: felix:bundlelevel 70
+
 P: set bundle start level to 11 of bundle with id 30
 A: felix:bundlelevel 11 30
 
