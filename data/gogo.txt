@@ -139,6 +139,9 @@ A: felix:bundlelevel 11 30
 P: show start level of framework bundle
 A: felix:frameworklevel
 
+P: show framework start bundle
+A: felix:frameworklevel
+
 P: change framework start level to 20
 A: felix:frameworklevel 20
 
