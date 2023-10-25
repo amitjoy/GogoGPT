@@ -175,6 +175,9 @@ A: felix:lb -u substring
 P: show all capabilities of all bundles
 A: felix:inspect cap *
 
+P: show all bundle capabilities
+A: felix:inspect cap *
+
 P: show all capabilities of a bundle having id 1
 A: felix:inspect cap * 1
 
