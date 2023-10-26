@@ -187,6 +187,9 @@ A: felix:inspect cap package 1
 P: show all package capabilities of all bundles
 A: felix:inspect cap package
 
+P: show all service capabilities of bundle 93
+A: felix:inspect cap service 93
+
 P: show all service capabilities of a bundle having id 1
 A: felix:inspect cap service 1
 
@@ -201,6 +204,9 @@ A: felix:inspect req * 1
 
 P: show all requirements of bundles having id 10, 45, 33
 A: felix:inspect req * 10 45 33
+
+P: show all package requirements of a bundle 68
+A: felix:inspect req package 68
 
 P: show all package requirements of a bundle having id 1
 A: felix:inspect req package 1
