@@ -520,13 +520,13 @@ A: prompt = "& "
 P: Change prompt to % sign
 A: prompt = "% "
 
-P: Lists information about why the specified bundle with ID 100 is not working (e.g., unresolved dependencies, etc.)
+P: List information about why the specified bundle with ID 100 is not working (e.g., unresolved dependencies, etc.)
 A: diag 100
 
-P: Lists all of the services that have been registered
+P: List all of the services that have been registered
 A: services
 
-P: Lists all registered services
+P: List all registered services
 A: services
 
 P: Show the headers of bundle 66
