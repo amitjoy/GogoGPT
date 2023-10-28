@@ -596,4 +596,19 @@ P: Add a command xyz accepting an array containing 5 6 17 14
 A: addcommand xyz [5 6 17 14]
 
 P: Add a command named math containing all functions available in Math class
-A: addcommand math ((bundle 0) loadclass java.lang.Math) 
+A: addcommand math ((bundle 0) loadclass java.lang.Math)
+
+P: Show the content of file fgh
+A: cat fgh
+
+P: Show the content of file xyz.txt
+A: cat xyz.txt
+
+P: Display the content of file mno
+A: cat mno
+
+P: Display the content of URI http://a.b/c.txt
+A: cat http://a.b/c.txt
+
+P: Display the content of URI http://b.d/k
+A: cat http://b.d/k
